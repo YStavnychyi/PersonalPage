@@ -1,0 +1,23 @@
+{
+  "name": "personalpage",
+  "version": "1.0.0",
+  "description": "one-page about me",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YStavnychyi/PersonalPage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YStavnychyi/PersonalPage/issues"
+  },
+  "homepage": "https://github.com/YStavnychyi/PersonalPage#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bootstrap": "^5.1.3"
+  }
+}
