@@ -1,0 +1,87 @@
+/* Skills */
+.skills{
+    text-align: center;
+    padding-bottom: 55px;
+    h2{
+        font-size: 32px;
+        font-weight: 700;
+        color: #fff;
+    }
+    .line-dec{
+        width: 60px;
+        height: 3px;
+        background-color: #a43f49;
+        margin: 10px auto;
+    }
+}
+
+.my-skills{
+    .col-md-6{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+.skills-item{
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 50px;
+    background-color: rgba(250, 250, 250, 0.1);
+    transition: all 0.5s;
+
+    h4{
+        transition: all 0.5s;
+    }
+
+    &:hover{
+        background-color: rgba(250, 250, 250, 1);
+
+        h4{
+            color: #1e1e1e;
+        }
+
+        .first-skills-icon{
+            background-image: url(../images/html.svg);
+        }
+
+        .second-skills-icon{
+            background-image: url(../images/css.svg);
+        }
+
+        .third-skills-icon{
+            background-image: url(../images/js.svg);
+        }
+
+        .fourth-skills-icon {
+            background-image: url(../images/bootstrap.svg);
+        }
+    }
+
+    .skills-icon{
+        width: 70px;
+        height: 70px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all 0.5s;
+    }
+
+    .first-skills-icon{
+        background-image: url(../images/html.svg);
+    }
+
+    .second-skills-icon{
+        background-image: url(../images/css.svg);
+    }
+
+    .third-skills-icon{
+        background-image: url(../images/js.svg);
+    }
+
+    .fourth-skills-icon {
+        background-image: url(../images/bootstrap.svg);
+    }
+}
