@@ -1,0 +1,133 @@
+$mobile: 576px;
+$tablet: 846px;
+$tabletPro: 1280px;
+$desktop: 1680px;
+
+@media only screen and (max-width: $desktop){
+    .menu{
+        left: 5%;
+    }
+
+    .section{
+        color: #fff;
+        width: 65%;
+        right: 5%;
+        left: 30%;
+    }
+}
+
+@media only screen and (max-width: $desktop) and (min-width: $tablet){
+    .menu{
+        .social-network{
+            ul{
+                li{
+                    margin: 0;
+                    a{
+                        width: 36px;
+                        height: 36px;
+                        line-height: 36px;
+                    }
+                }
+            }
+        }
+        .image{
+            margin-top: 60px;
+        }
+    }
+}
+
+@media only screen and (max-width: $tabletPro){
+    .menu{
+        left: 0%
+    }
+}
+
+@media only screen and (max-width: $tabletPro) and (min-width: $tablet){
+    .menu{
+        width: 25%;
+    }
+
+    .about-list{
+        li{
+            &:not(:last-child){
+                padding-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: ($tablet - 1px)){
+    #menu-toggle, #menu-close{
+        display: inline-block;
+    }
+
+    .menu{
+        width: 320px;
+        -webkit-transform: translateX(-100%) !important;
+        transform: translateX(-100%) !important;
+        transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
+        transition: transform 233ms cubic-bezier(0, 0, 0.21, 1);
+        transition: transform 233ms cubic-bezier(0, 0, 0.21, 1), -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
+
+        .image{
+            margin-top: 40px;
+
+            img{
+                width: 120px;
+                height: 120px;
+            }
+        }
+
+        .author-content{
+            margin: 20px 0px 40px 0px;
+        }
+
+        .container{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        &.open{
+            display: inline-block;
+            -webkit-transform: translateX(0) !important;
+                    transform: translateX(0) !important;
+        }
+    }
+
+    .responsive-nav{
+        display: inline-block;
+    }
+
+    .section{
+        width: 94%;
+        right: 3%;
+        left: 3%;
+    }
+
+    .isotope-item{
+        width: 94%;
+        margin: 3%;
+        border-bottom: none;
+        text-align: center;
+    }
+
+    .isotope-toolbar{
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: $mobile){
+    .section-heading{
+        padding: 80px 10px;
+    }
+
+    .box-stats{
+        padding: 15px 20px 20px 25px;
+    }
+
+    .custom-title{
+        font-size: 21px;
+    }
+}
+
+

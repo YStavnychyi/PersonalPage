@@ -468,7 +468,7 @@ html {
   width: 100%;
 }
 
-.isotop-item {
+.isotope-item {
   position: relative;
   width: 48%;
   margin: 1%;
@@ -477,7 +477,7 @@ html {
   margin-bottom: 30px;
 }
 
-.isotop-item img {
+.isotope-item img {
   top: 0;
   left: 0;
   width: 100%;
@@ -582,4 +582,108 @@ figure.snip1321:hover:after, figure.snip1321.hover:after {
   -webkit-transform: rotateX(0);
   transform: rotateX(0);
   opacity: 0.9;
+}
+
+@media only screen and (max-width: 1680px) {
+  .menu {
+    left: 5%;
+  }
+  .section {
+    color: #fff;
+    width: 65%;
+    right: 5%;
+    left: 30%;
+  }
+}
+
+@media only screen and (max-width: 1680px) and (min-width: 846px) {
+  .menu .social-network ul li {
+    margin: 0;
+  }
+  .menu .social-network ul li a {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+  }
+  .menu .image {
+    margin-top: 60px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .menu {
+    left: 0%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 846px) {
+  .menu {
+    width: 25%;
+  }
+  .about-list li:not(:last-child) {
+    padding-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 845px) {
+  #menu-toggle, #menu-close {
+    display: inline-block;
+  }
+  .menu {
+    width: 320px;
+    -webkit-transform: translateX(-100%) !important;
+    transform: translateX(-100%) !important;
+    transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
+    -webkit-transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
+    transition: transform 233ms cubic-bezier(0, 0, 0.21, 1);
+    transition: transform 233ms cubic-bezier(0, 0, 0.21, 1), -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
+  }
+  .menu .image {
+    margin-top: 40px;
+  }
+  .menu .image img {
+    width: 120px;
+    height: 120px;
+  }
+  .menu .author-content {
+    margin: 20px 0px 40px 0px;
+  }
+  .menu .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .menu.open {
+    display: inline-block;
+    -webkit-transform: translateX(0) !important;
+    transform: translateX(0) !important;
+  }
+  .responsive-nav {
+    display: inline-block;
+  }
+  .section {
+    width: 94%;
+    right: 3%;
+    left: 3%;
+  }
+  .isotope-item {
+    width: 94%;
+    margin: 3%;
+    border-bottom: none;
+    text-align: center;
+  }
+  .isotope-toolbar {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .section-heading {
+    padding: 80px 10px;
+  }
+  .box-stats {
+    padding: 15px 20px 20px 25px;
+  }
+  .custom-title {
+    font-size: 21px;
+  }
 }
